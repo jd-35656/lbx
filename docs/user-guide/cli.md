@@ -18,10 +18,11 @@ See [Installation Guide](../getting-started/installation.md) for other installat
 
 These options are available for all commands:
 
-| Option      | Description                |
-| ----------- | -------------------------- |
-| `--help`    | Show help message and exit |
-| `--version` | Show version information   |
+| Option         | Description                                          |
+| -------------- | ---------------------------------------------------- |
+| `--help`       | Show help message and exit                           |
+| `--version`    | Show version information                             |
+| `-v` `--vault` | Path to the vault file. Defaults to ~/.lbx/vault.lbx |
 
 ## Command Reference
 
@@ -36,6 +37,7 @@ The following sections document all available commands. Commands are auto-genera
 | Code | Meaning |
 | ---- | ------- |
 | 0    | Success |
+| 1    | Failure |
 
 ## See Also
 
