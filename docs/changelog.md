@@ -16,3 +16,9 @@ and follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
 {% include '_draft_changelog.md' ignore missing %}
 
 <!-- BEGIN RELEASED CHANGELOG -->
+
+## [v1.0.0](https://github.com/jd-35656/lbx/tree/v1.0.0) - 2025-12-07
+
+### Added
+
+- Added initial Lbx implementation including core vault manager, services, crypto, keychain integration, CLI, and tests. ([#1](https://github.com/jd-35656/lbx/issues/1))

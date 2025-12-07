@@ -1,1 +1,0 @@
-Added initial Lbx implementation including core vault manager, services, crypto, keychain integration, CLI, and tests.
