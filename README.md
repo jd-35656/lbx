@@ -24,13 +24,45 @@ For other installation methods, see the [Installation Guide](https://jd-35656.gi
 ### CLI Usage
 
 ```bash
-# Add CLI examples here
+# Create a new vault
+lbx vault init
+
+# Add a secret
+lbx secret add github token --value ghp_xxxxxx
+
+# Retrieve a secret
+lbx secret get github token
+
+# Update a secret
+printf "new-value" | lbx secret update github token
+
+# List services and secrets
+lbx service list
+lbx secret list
+lbx secret list --service github
+
+# Rename or move secrets
+lbx secret rename github token api_key
+lbx secret move github api_key gitlab
+
+# Lock or delete the vault
+lbx vault lock
+lbx vault delete
 ```
 
 ### Python API
 
 ```python
-# Add Python API examples here
+from lbx import Lbx
+
+vault = Lbx()
+
+vault.add_secret("github", "token", "value")
+entry = vault.get_secret("github", "token")
+print(entry.value)
+
+vault.list_services()
+vault.list_secrets()
 ```
 
 For complete examples and tutorials, see the [Quick Start Guide](https://jd-35656.github.io/lbx/getting-started/quickstart/).
