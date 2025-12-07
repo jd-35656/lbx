@@ -17,7 +17,7 @@ A lightweight secret storage vault with CLI and Python API. Stores secrets in en
 pipx install lbx
 ```
 
-For other installation methods, see the [Installation Guide](https://jd-35656.github.io/lbx/getting-started/installation/).
+For additional installation methods, see the [Installation Guide](https://jd-35656.github.io/lbx/latest/getting-started/installation/).
 
 ## Quick Start
 
@@ -65,7 +65,7 @@ vault.list_services()
 vault.list_secrets()
 ```
 
-For complete examples and tutorials, see the [Quick Start Guide](https://jd-35656.github.io/lbx/getting-started/quickstart/).
+For complete examples and tutorials, see the [Quick Start Guide](https://jd-35656.github.io/lbx/latest/getting-started/quickstart/).
 
 ## Use Cases
 
@@ -76,13 +76,13 @@ For complete examples and tutorials, see the [Quick Start Guide](https://jd-3565
 
 ## Documentation
 
-Complete documentation is available at: **[https://jd-35656.github.io/lbx/](https://jd-35656.github.io/lbx/)**
+Complete documentation is available at: **[https://jd-35656.github.io/lbx/latest/](https://jd-35656.github.io/lbx/latest/)**
 
-- [Installation Guide](https://jd-35656.github.io/lbx/getting-started/installation/) - Detailed installation instructions
-- [Quick Start](https://jd-35656.github.io/lbx/getting-started/quickstart/) - Get started in minutes
-- [CLI Reference](https://jd-35656.github.io/lbx/user-guide/cli/) - Complete command documentation
-- [API Reference](https://jd-35656.github.io/lbx/api/) - Python API documentation
-- [Contributing](https://jd-35656.github.io/lbx/contributing/) - How to contribute
+- [Installation Guide](https://jd-35656.github.io/lbx/latest/getting-started/installation/) - Detailed installation instructions
+- [Quick Start](https://jd-35656.github.io/lbx/latest/getting-started/quickstart/) - Get started in minutes
+- [CLI Reference](https://jd-35656.github.io/lbx/latest/user-guide/cli/) - Complete command documentation
+- [API Reference](https://jd-35656.github.io/lbx/latest/api/) - Python API documentation
+- [Contributing](https://jd-35656.github.io/lbx/latest/contributing/) - How to contribute
 
 ## Requirements
 
@@ -92,7 +92,7 @@ Complete documentation is available at: **[https://jd-35656.github.io/lbx/](http
 
 ## Contributing
 
-Contributions are welcome! Please read the [Contributing Guide](https://jd-35656.github.io/lbx/contributing/) for details on our development process, coding standards, and how to submit pull requests.
+Contributions are welcome! Please read the [Contributing Guide](https://jd-35656.github.io/lbx/latest/contributing/) for details on our development process, coding standards, and how to submit pull requests.
 
 ## License
 
@@ -100,7 +100,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Documentation**: [https://jd-35656.github.io/lbx/](https://jd-35656.github.io/lbx/)
+- **Documentation**: [https://jd-35656.github.io/lbx/latest/](https://jd-35656.github.io/lbx/latest/)
 - **PyPI Package**: [pypi.org/project/lbx](https://pypi.org/project/lbx/)
 - **Bug Reports**: [GitHub Issues](https://github.com/jd-35656/lbx/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/jd-35656/lbx/discussions)
