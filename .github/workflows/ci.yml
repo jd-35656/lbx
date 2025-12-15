@@ -55,7 +55,7 @@ jobs:
         run: pip install nox
 
       - name: Cache nox environments
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .nox
           key: nox-check-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('noxfile.py', 'pyproject.toml') }}
@@ -98,7 +98,7 @@ jobs:
         run: pip install nox
 
       - name: Cache nox environments
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .nox
           key: nox-tests-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('noxfile.py', 'pyproject.toml') }}
@@ -111,7 +111,7 @@ jobs:
           COVERAGE_FILE: .coverage.${{ matrix.python-version }}.${{ matrix.os }}
 
       - name: Upload coverage data
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         if: matrix.os == 'ubuntu-latest' && !cancelled()
         with:
           name: coverage-data-${{ matrix.python-version }}
@@ -145,7 +145,7 @@ jobs:
         run: pip install nox
 
       - name: Cache nox environments
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .nox
           key: nox-coverage-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('noxfile.py', 'pyproject.toml') }}
@@ -153,7 +153,7 @@ jobs:
             nox-coverage-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
 
       - name: Download coverage artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           pattern: coverage-data-*
           merge-multiple: true
@@ -162,7 +162,7 @@ jobs:
         run: nox -s coverage
 
       - name: Upload coverage reports
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: coverage-report
           path: coverage.xml
