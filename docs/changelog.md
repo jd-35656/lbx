@@ -17,6 +17,11 @@ and follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
 
 <!-- BEGIN RELEASED CHANGELOG -->
 
+## [v1.3.0](https://github.com/jd-35656/lbx/tree/v1.3.0) - 2026-07-01
+
+No significant changes.
+
+
 ## [v1.2.0](https://github.com/jd-35656/lbx/tree/v1.2.0) - 2026-04-01
 
 No significant changes.
