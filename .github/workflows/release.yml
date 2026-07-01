@@ -173,7 +173,7 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
       - name: Upload release notes
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: release-notes
           path: release_notes.md
@@ -215,7 +215,7 @@ jobs:
         run: nox -s build
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist/
@@ -230,12 +230,12 @@ jobs:
 
     steps:
       - name: Download release notes
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: release-notes
 
       - name: Create GitHub release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ needs.prepare.outputs.version }}
           name: ${{ needs.prepare.outputs.version }}
@@ -252,13 +252,13 @@ jobs:
 
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: dist
           path: dist/
 
       - name: Generate attestation
-        uses: actions/attest-build-provenance@v3
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: "dist/*"
 
